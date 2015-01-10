@@ -1,5 +1,5 @@
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesClass{UnimasThesis}[2015/01/05 LaTeX2e class for Unimas Thesis v1.00.  Copyright (c) 2015 Lim Lian Tze (liantze@gmail.com)]
+\ProvidesClass{UnimasThesis}[2015/01/11 LaTeX2e class for Unimas Thesis v1.00.  Copyright (c) 2015 Lim Lian Tze (liantze@gmail.com)]
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % CHANGES:
