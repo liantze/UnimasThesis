@@ -1,10 +1,10 @@
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesClass{UnimasThesis}[2015/01/11 LaTeX2e class for Unimas Thesis v1.00.  Copyright (c) 2015 Lim Lian Tze (liantze@gmail.com)]
+\ProvidesClass{UnimasThesis}[2017/12/22 LaTeX2e class for Unimas Thesis v1.01.  Copyright (c) 2015 Lim Lian Tze (liantze@gmail.com)]
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % CHANGES:
 %
-% v1.00 (January 5, 2015)
+% v1.01 (December 22, 2017)
 % - First version
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -181,6 +181,19 @@
     \setulmarginsandblock{30mm}{30mm}{*}
     \checkandfixthelayout
     \ch@ngetext
+  \begin{titlingpage}
+  \centering
+  {\large\MakeUppercase{\@title}\par}
+  \vfill
+  \@author\par
+  \vfill
+  A thesis submitted\par
+  In fulfillment of the requirements for the degree of \@degreetype\par
+  \vfill
+  \@faculty\par
+  UNIVERSITY MALAYSIA SARAWAK\\
+  \@submissionyear
+  \end{titlingpage}
 }
 
 %%%%%%%
@@ -281,7 +294,7 @@
 %%%%%%%
 \patchcommand{\frontmatter}{
   \setlength{\beforechapskip}{-\baselineskip}
-  \setlength{\midchapskip}{0mm}	
+  \setlength{\midchapskip}{0mm}
   \renewcommand*\cftchapterfont{\mdseries\normalsize}
   \renewcommand*\cftchapterpagefont{\mdseries\normalsize}
   \setlength{\cftbeforechapterskip}{.5ex}
@@ -394,6 +407,3 @@
   \translatelet\foo{Source}
   \foo: {#1}\par
 }
-
-
-
