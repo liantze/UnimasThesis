@@ -1,10 +1,15 @@
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesClass{UnimasThesis}[2017/12/22 LaTeX2e class for Unimas Thesis v1.01.  Copyright (c) 2015 Lim Lian Tze (liantze@gmail.com)]
+\ProvidesClass{UnimasThesis}[2018/04/06 LaTeX2e class for Unimas Thesis v1.02.  Copyright (c) 2015-2018 Lim Lian Tze (liantze@gmail.com)]
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % CHANGES:
+% v1.02 (April 6, 2018)
+% - Change page left margin to 3cm
 %
 % v1.01 (December 22, 2017)
+% - Add title page
+%
+% v1.0 January 11 2015
 % - First version
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -138,7 +143,7 @@
 % Page layout -- do not change!
 %%%%%%%%%%
 \settrimmedsize{297mm}{210mm}{*}
-\setlrmarginsandblock{25mm}{25mm}{*}
+\setlrmarginsandblock{30mm}{25mm}{*}
 \setulmarginsandblock{30mm}{30mm}{*}
 \setheadfoot{\baselineskip}{15mm}
 \setheaderspaces{15mm}{*}{*}
@@ -158,6 +163,7 @@
     \newlength{\barlength}
     \setlength{\barlength}{15mm}
     \addtolength{\barlength}{-2ex}
+    \setlrmarginsandblock{25mm}{25mm}{*}
     \setulmarginsandblock{25mm}{25mm}{*}
     \checkandfixthelayout
     \ch@ngetext
@@ -178,6 +184,7 @@
 	\@degreetype\\
 	\@submissionyear\par
 	\end{titlingpage}
+    \setlrmarginsandblock{30mm}{25mm}{*}
     \setulmarginsandblock{30mm}{30mm}{*}
     \checkandfixthelayout
     \ch@ngetext
